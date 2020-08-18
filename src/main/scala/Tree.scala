@@ -9,14 +9,12 @@ object Tree extends App {
     println("*" * 5)
   }
   else {
-    for (i <- height to height) {
-      var j = 0
-      while (j <= i) {
-        val space = i - j
-        val length = 2 * j - 1
-        println(" " * space + "*" * length)
-        j += 1
-      }
+    var i = 0
+    while (i <= height) {
+      val space = height - i
+      val length = 2 * i - 1
+      println(" " * space + "*" * length)
+      i += 1
     }
   }
 }
